@@ -3,7 +3,7 @@ var router = new express.Router();
 
 var filmRouter = require('./films.js')
 
-router.use('/api/films', filmRouter)
+router.use('/films', filmRouter)
 
 
 router.get('/', function(req, res) {
