@@ -6,9 +6,9 @@ var filmRouter = require('./films.js')
 router.use('/api/films', filmRouter)
 
 
-// router.get('/', function(req, res) {
-//   res.json({ data: 'Welcome Page'});
-// });
+router.get('/', function(req, res) {
+  res.json({ data: 'Welcome Page'});
+});
 router.get('/about', function(req,res){
   res.json({data: 'About us'});
 });
